@@ -1,0 +1,9 @@
+targets:
+  $default:
+    builders:
+      isar_generator:isar_generator:
+        generate_for:
+          - lib/ble_device_model.dart
+          - "!lib/*.pb.dart"
+          - "!lib/*.pbenum.dart"
+          - "!lib/*.pbjson.dart"
